@@ -1,0 +1,31 @@
+/*
+BLOCK Manual
+*/
+
+.manual {
+	background-color: #fff;
+}
+
+.manual h1 {
+	/*special font size*/
+	font-size: 3em;
+	line-height: 1;
+}
+
+.manual h2 a {
+	color: #FF;
+}
+
+/*
+BLOCK Gallery
+*/
+
+.gallery {
+	background-color: #fff;
+}
+
+.gallery h1 {
+	/*special font size*/
+	font-size: 3em;
+	line-height: 1;
+}

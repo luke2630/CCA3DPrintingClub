@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Support Us</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="stylesheet" type="text/css" href="./ace.css">
+  <link rel="stylesheet" type="text/css" href="./../font-sheet.css">
+  <link rel="icon" type="image/png" sizes="256x256" href="./../images/256x256_logo.png" />
+</head>
+<body>
+
+<!-- <b>dont send anything these are place holders</b> <br />
+
+<br />
+donate with bitcoin(比特币) <br />
+address: <br />
+17VZNX1SN5NtKa8UQFxwQbFeFc3iqRYhem <br /> -->
+
+<div id="app">
+	<div class="content-container-warp">
+		<div class="line-bar"></div>
+
+		<div class="content-container">
+			<div id="payment-container" class="">
+				<div id="error-title"></div>
+				<div class="form">
+				    <h1>Donation. (In USD)</h1>
+				    <label class="container">
+				    	<input type="radio" name="donation-money" value="2" />
+				    	<span class="checkmark"></span>$2
+				    </label><br />
+				    <label class="container">
+				    	<input type="radio" name="donation-money" value="5" />
+				    	<span class="checkmark"></span>$5
+				    </label><br />
+				    <label class="container">
+				    	<input type="radio" name="donation-money" value="10" />
+				    	<span class="checkmark"></span>$10
+				    </label><br />
+				    <label class="container">$
+				     	<input type="radio" name="donation-money" value="c" /><input type="text" name="custom" placeholder="Type your price. (Here)" value="" autocomplete="off" onkeydown="update_value()" />
+				     	<span class="checkmark"></span>
+				    </label>
+				</div>
+				<button class="next-step-button" onclick="getTotalDonation()"/>Next</button>
+			</div>
+		</div>
+		<div id="donation-methods" class="hidden">
+			<h1 id="loading">Loading...</h1>
+		</div>
+		<div id="thank-you" class="hidden">
+			<h1>Thank you for your donation!</h1>
+			<a href="..">Our home page.</a>
+		</div>
+
+		<div class="line-bar"></div>
+	</div>
+	<img src="./../svg/logo-outline-bg.svg" alt="">
+</div>
+<footer></footer>
+
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-analytics.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+
+<script>
+	// To attackers
+  	// Please don't spam with the code below
+  	// 
+	var firebaseConfig = {
+		apiKey: "AIzaSyCJw-t_SUyJ3u8NEYAB1bKUUfTbFQpQfKc",
+		authDomain: "dpr-b975e.firebaseapp.com",
+		databaseURL: "https://dpr-b975e.firebaseio.com",
+		projectId: "dpr-b975e",
+		storageBucket: "dpr-b975e.appspot.com",
+		messagingSenderId: "260372707792",
+		appId: "1:260372707792:web:6891e77f726e98918421d5",
+		measurementId: "G-TGEBK92Q52"
+	};
+	firebase.initializeApp(firebaseConfig);
+	firebase.analytics();
+</script>
+<script type="text/javascript" src="./running.js"></script>
+</body>
+</html>
